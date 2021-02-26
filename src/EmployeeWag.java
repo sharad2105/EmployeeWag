@@ -4,11 +4,11 @@ public class EmployeeWag {
     public static final int NUM_OF_WORKING_DAY = 20;
     public static final int EMP_RATE_PER_HOUR = 20;
     public static final int maxHrsInMonth=10;
-    public static void main(String args[]) {
-        System.out.println("Welcome to Employee With wage Computaion");
         int empHrs = 0;
         int totalEmpHrs=0;
         int totalWorkingDays=0;
+
+        void compute(){
         while(totalEmpHrs <= maxHrsInMonth && totalWorkingDays < NUM_OF_WORKING_DAY)
         {
             totalWorkingDays++;
@@ -30,5 +30,9 @@ public class EmployeeWag {
         }
         int totalEmpWage=totalEmpHrs * EMP_RATE_PER_HOUR;
         System.out.println("Total Emp Wage: " +totalEmpWage);
+    }
+    public static void main(String[] args){
+        EmployeeWag e=new EmployeeWag();
+        e.compute();
     }
 }
