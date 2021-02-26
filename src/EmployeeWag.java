@@ -38,7 +38,7 @@ public class EmployeeWag {
             System.out.println("Days: " + totalWorkingDays + "Emp Hrs: " +empHrs);
 
         }
-        return totalEmpHrs * IS_FULL_TIME;
+        return totalEmpHrs * EMP_RATE_PER_HOUR;
 
     }
 
@@ -46,8 +46,10 @@ public class EmployeeWag {
     {
         EmployeeWag emp=new EmployeeWag("DMart",20,2,10);
         EmployeeWag emp1=new EmployeeWag("Reliance",30,3,10);
+        EmployeeWag emp2=new EmployeeWag("Info",30,3,10);
         System.out.println("Total Emp Wage For Company " +emp.company + " is: " + emp.computeWage());
         System.out.println("Total Emp Wage For Company " +emp1.company + " is: " + emp1.computeWage());
+        System.out.println("Total Emp Wage For Company " +emp2.company + " is: " + emp2.computeWage());
     }
 
 }
